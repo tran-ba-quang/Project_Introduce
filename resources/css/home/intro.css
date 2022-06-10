@@ -1,0 +1,119 @@
+.box-title .box-title-name {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    background: #005da3;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    z-index: 1;
+    padding: 10px 20px;
+    line-height: 1.1em;
+    font-size: 24px;
+}
+.box-title {
+    position: relative;
+    text-align: center;
+    height: 100px;
+    padding-top: 45px;
+}
+.box-title .box-title-name:before {
+    content: "";
+    position: absolute;
+    border-top: 10px solid #005da3;
+    border-left: 15px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 15px solid transparent;
+    left: calc(50% - 32px);
+    bottom: -27px;
+    width: 65px;
+}
+.box-title .box-title-name:after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    bottom: -18px;
+    height: 9px;
+    width: 200px;
+    left: calc(50% - 100px);
+    border-top: 2px solid #005da3;
+}
+.text-container-intro {
+    padding-right: 28%;
+    padding-top: 5%;
+    font-size: 17px;
+}
+.vd-container {
+    padding-left: 20%;
+}
+.vd-container .vd{
+    width: 95%;
+    height: auto;
+}
+.main-intro-right {
+    width: 58%;
+}
+.main-intro-left{
+    width: 42%;
+}
+.main-intro{
+    display: flex;
+}
+a#chitiet-intro {
+    border: 1px solid beige;
+    padding: 10px;
+    background: #ededfb;
+    color: black;
+    float: right;
+    margin-top: 5%;
+}
+
+
+
+.home-services{
+    background-color: #005da3;
+}
+.services-top {
+    position: relative;
+    text-align: center;
+    height: 100px;
+    padding-top: 45px;
+}
+.services-top .services-top-name h3{
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    
+}
+.main-services{
+    display: flex;
+    padding: 30px 20% 30px 20%  ;
+}
+.main-services-1{
+    width: 15%;
+    height: auto;
+    padding-right: 5px;
+}
+.main-services-2{
+    width: 15%;
+    height: auto;
+}
+.main-services-3{
+    width: 15%;
+    height: auto;
+    padding-left: 5px;
+}
+.main-services-1 img{
+    width: 100%;
+    height: auto;
+}
+.main-services-2 img{
+    width: 100%;
+    height: auto;
+}
+.main-services-3 img{
+    width: 100%;
+    height: auto;
+}
