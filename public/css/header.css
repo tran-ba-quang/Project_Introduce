@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+body a {
+    outline: none!important;
+    overflow: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+
+}
+.header-top {
+    /* margin: 10px 5% 10px 5%; */
+    border-bottom: 1px solid #f1e9e9;
+    padding: 10px 7% 10px 5%;
+}
+.header-row {
+    display: flex;
+    width: 100%;
+}
+.header-col.header-left {
+    width: 50%;
+}
+.header-col.header-right {
+    width: 50%;
+    /* text-align: center; */
+    margin-left: 45%;
+}
+ul.custom-menu li a {
+    color: #005da3;
+}
+img#logo {
+    height: 55px;
+    width: 170px;
+}
+.navbar-nav li.nav-item {
+    display: inline-block;
+    position: relative;
+    
+}
+ul.navbar-nav {
+    /* margin-left: 400px; */
+    float: right;
+    margin-right: 15px;
+    margin-top: 23px;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 200px;
+    padding: 6px 0px;
+    z-index: 1;
+    border-top:5px solid #0693e3;
+}
+.nav-item:hover .dropdown{
+    display: block;
+}
+a.nav-link{
+    color: black;
+}
+.contraine {
+    display: inline-flex;
+    padding: 10px;
+}
+.contraine a{
+    text-decoration: none;
+}
+a.dropdown-item {
+    display: block;
+    padding: 10px;
+}
+.dropdown-item:hover {
+    background-color: #777777;
+}
+
+@media screen and (min-width: 1470px) {
+    a.nav-link {
+      font-size: 14px;
+    }
+    .navbar-nav li.nav-item {
+        margin-left: 15px; 
+    }
+    div.header-gr2{
+        display: none;
+    }
+    .contraine{
+        margin-left: 13%;
+    }
+    .header-col.header-left {
+        margin-left: 10%;
+    }
+        
+}
+@media screen and (max-width: 1470px) and (min-width:1320px) {
+    a.nav-link {
+        font-size: 14px;
+      }
+    div.header-gr2{
+        display: none;
+    }
+    .navbar-nav li.nav-item {
+        margin-left: 15px; 
+    }
+    .contraine{
+        margin-left: 9%;
+    }
+    .header-col.header-left {
+        margin-left: 7%;
+    }
+  }
+
+@media screen and (max-width: 1320px) and (min-width:1100px) {
+    a.nav-link {
+        font-size: 13px;
+      }
+    div.header-gr2{
+        display: none;
+    }
+    .navbar-nav li.nav-item {
+        margin-left: 13px; 
+    }
+    .contraine{
+        margin-left: 5%;
+    }
+    .header-col.header-left {
+        margin-left: 3%;
+    }
+  }
+@media screen and (max-width: 1100px){
+    a.nav-link {
+        font-size: 12px;
+      }
+    div.header-gr1{
+        display: none;
+    }
+    .navbar-nav li.nav-item {
+        margin-left: 10px; 
+    }
+    .contraine{
+        margin-left: 3%;
+    }
+    .header-col.header-left {
+        margin-left: 1%;
+    }
+  }
+
+.header-top2 div.header-row span{
+    font-size: 12px;
+}
+.header-row2 {
+    text-align: center;
+}
+img#logo2{
+    width: 110px;
+    height: 36px;
+}
+.contraine2 div.logo{
+    text-align: center;
+    padding-top: 15px;
+
+}
+.header-top2 {
+    /* margin: 10px 5% 10px 5%; */
+    border-bottom: 1px solid #f1e9e9;
+    padding: 10px 7% 10px 5%;
+}
+
+.dropdown-content {
+    position: fixed;
+    display: none;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(2, 23, 37, 0.96);
+    z-index: 2;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    transition-duration: 0.4s;
+  }
+.show {
+    display: block;
+  }
+.dropdown2 .dropbtn {
+    padding: 2px 7px 2px 7px ;
+    float: right;
+    margin-top: 10px;
+    border: 1px solid;
+    width: 40px;
+    height: 40px;
+
+  }
+  li.nav-item2{
+    text-transform: capitalize;
+    margin: 30px 0 5px 0;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #ffffff;
+  }
+
+.contraine2 {
+    display: inline-flex;   
+}
+
+@media screen and (min-width: 1000px){
+    .dropdown2 .dropbtn {
+        margin-left: 420px;
+    
+      }
+    .contraine2 {  
+        margin-left: 42%;
+    }
+  }
+@media screen and (max-width: 1000px) and (min-width:800px) {
+    .dropdown2 .dropbtn {
+        margin-left: 350px;
+    
+      }
+    .contraine2 {  
+        margin-left: 35%;
+    }
+  }
+  @media screen and (max-width: 800px) and (min-width:700px) {
+    .dropdown2 .dropbtn {
+        margin-left: 280px;
+    
+      }
+    .contraine2 {  
+        margin-left: 35%;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .dropdown2 .dropbtn {
+        margin-left: 170px;
+    
+      }
+    .contraine2 {  
+        margin-left: 35%;
+    }
+  }
