@@ -11,8 +11,11 @@ body a {
     font-size: 13px;
 
 }
+header#header {
+    margin: 0px 7%;
+    /* border-radius: 10px; */
+}
 .header-top {
-    /* margin: 10px 5% 10px 5%; */
     border-bottom: 1px solid #f1e9e9;
     padding: 10px 7% 10px 5%;
 }
@@ -22,11 +25,6 @@ body a {
 }
 .header-col.header-left {
     width: 50%;
-}
-.header-col.header-right {
-    width: 50%;
-    /* text-align: center; */
-    margin-left: 45%;
 }
 ul.custom-menu li a {
     color: #005da3;
@@ -40,39 +38,28 @@ img#logo {
     position: relative;
     
 }
-ul.navbar-nav {
-    /* margin-left: 400px; */
-    float: right;
-    margin-right: 15px;
-    margin-top: 23px;
-}
+
 .dropdown{
     display: none;
     position: absolute;
-    background-color: #ffffff;
-    min-width: 200px;
-    padding: 6px 0px;
+    min-width: auto;
     z-index: 1;
-    border-top:5px solid #0693e3;
 }
 .nav-item:hover .dropdown{
     display: block;
 }
-a.nav-link{
+
+.container2 {
+    margin: 0;
+    min-width: 100%;
+    padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
     color: black;
 }
-.contraine {
-    display: inline-flex;
-    padding: 10px;
-}
-.contraine a{
-    text-decoration: none;
-}
-a.dropdown-item {
-    display: block;
-    padding: 10px;
-}
-.dropdown-item:hover {
+
+pdown-item:hover {
     background-color: #777777;
 }
 
@@ -81,7 +68,7 @@ a.dropdown-item {
       font-size: 14px;
     }
     .navbar-nav li.nav-item {
-        margin-left: 15px; 
+        margin-left: 5px; 
     }
     div.header-gr2{
         display: none;
@@ -102,7 +89,7 @@ a.dropdown-item {
         display: none;
     }
     .navbar-nav li.nav-item {
-        margin-left: 15px; 
+        margin-left: 5px; 
     }
     .contraine{
         margin-left: 9%;
@@ -120,7 +107,7 @@ a.dropdown-item {
         display: none;
     }
     .navbar-nav li.nav-item {
-        margin-left: 13px; 
+        margin-left: 3px; 
     }
     .contraine{
         margin-left: 5%;
@@ -137,7 +124,7 @@ a.dropdown-item {
         display: none;
     }
     .navbar-nav li.nav-item {
-        margin-left: 10px; 
+        margin-left: 0px; 
     }
     .contraine{
         margin-left: 3%;
