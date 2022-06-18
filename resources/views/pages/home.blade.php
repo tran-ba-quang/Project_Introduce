@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{asset('public/css/header.css')}}">
-    <link rel="stylesheet" href="{{asset('public/css/intro.css')}}">
-    <link rel="stylesheet" href="{{asset('public/css/slider.css')}}">
+    <link rel="stylesheet" href="{{asset('css/header.css')}}">
+    <link rel="stylesheet" href="{{asset('css/intro.css')}}">
+    <link rel="stylesheet" href="{{asset('css/slider.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="{{asset('public/img/logo.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('img/logo.png')}}" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -49,16 +49,16 @@
                   <input type="radio" name="radio-btn" id="radio4">
 
                   <div class="slide first">
-                    <img src="{{ asset('public/img/slide-1-scaled.jpg') }}" >
+                    <img src="{{ asset('img/slide-1-scaled.jpg') }}" >
                   </div>
                   <div class="slide">
-                    <img src="{{ asset('public/img/slide-1-scaled.jpg') }}" >
+                    <img src="{{ asset('img/slide-1-scaled.jpg') }}" >
                   </div>
                   <div class="slide">
-                    <img src="{{ asset('public/img/slide-1-scaled.jpg') }}" >
+                    <img src="{{ asset('img/slide-1-scaled.jpg') }}" >
                   </div>
                   <div class="slide">
-                    <img src="{{ asset('public/img/slide-1-scaled.jpg') }}" >
+                    <img src="{{ asset('img/slide-1-scaled.jpg') }}" >
                   </div>
                 </div>
               </div>
@@ -73,7 +73,7 @@
                     <div class="main-intro-right">
                         <div class="vd-container">
                           <video class="vd" controls>
-                            <source src="{{asset('public/video/mvst.mp4')}}" type="video/mp4">
+                            <source src="{{asset('video/mvst.mp4')}}" type="video/mp4">
                           </video>
                         </div>
                     </div>
@@ -293,8 +293,8 @@
 </body>
 </html>
 
-<script src="{{asset('public/js/banner.js')}}"></script>
-<script src="{{asset('public/js/header.js')}}"></script>
+<script src="{{asset('js/banner.js')}}"></script>
+<script src="{{asset('js/header.js')}}"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
