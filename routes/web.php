@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\Users\LoginController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\MenuController;
 use App\Http\Controllers\Admin\MainController;
+use App\Http\Controllers\Admin\ProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,6 +20,9 @@ Route::get('/', function () {
     // return view('welcome');
     return view('layout');
 });
+
+Route::get('admin/users/login', [LoginController::class, 'index'])->name('login');
+Route::post('admin/users/login/store', [LoginController::class, 'store']);
 
 Route::middleware(['auth'])->group(function () {
 
@@ -38,14 +42,14 @@ Route::middleware(['auth'])->group(function () {
         });
 
         #Product
-        // Route::prefix('products')->group(function () {
-        //     Route::get('add', [ProductController::class, 'create']);
-        //     Route::post('add', [ProductController::class, 'store']);
-        //     Route::get('list', [ProductController::class, 'index']);
-        //     Route::get('edit/{product}', [ProductController::class, 'show']);
-        //     Route::post('edit/{product}', [ProductController::class, 'update']);
-        //     Route::DELETE('destroy', [ProductController::class, 'destroy']);
-        // });
+        Route::prefix('products')->group(function () {
+            Route::get('add', [ProductController::class, 'create']);
+            Route::post('add', [ProductController::class, 'store']);
+            Route::get('list', [ProductController::class, 'index']);
+            Route::get('edit/{product}', [ProductController::class, 'show']);
+            Route::post('edit/{product}', [ProductController::class, 'update']);
+            Route::DELETE('destroy', [ProductController::class, 'destroy']);
+        });
 
         #Slider
         // Route::prefix('sliders')->group(function () {
@@ -58,7 +62,7 @@ Route::middleware(['auth'])->group(function () {
         // });
 
         #Upload
-        // Route::post('upload/services', [\App\Http\Controllers\Admin\UploadController::class, 'store']);
+        Route::post('upload/services', [\App\Http\Controllers\Admin\UploadController::class, 'store']);
 
         #Cart
         // Route::get('customers', [\App\Http\Controllers\Admin\CartController::class, 'index']);
