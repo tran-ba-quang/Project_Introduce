@@ -17,9 +17,11 @@ use App\Http\Controllers\Admin\ProductController;
 */
 
 Route::get('/', function () {
-    // return view('welcome');
-    return view('layout');
+    return view('pages.home');
 });
+Route::get('/','HeaderController@index');
+Route::get('/Gioithieu','GioithieuController@index');
+
 
 Route::get('admin/users/login', [LoginController::class, 'index'])->name('login');
 Route::post('admin/users/login/store', [LoginController::class, 'store']);
